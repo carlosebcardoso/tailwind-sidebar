@@ -8,7 +8,27 @@
     <link rel="stylesheet" href="../dist/output.css">
 </head>
 <body class="bg-gray-200">
-    <aside class="bg-white pb-10 overflow-y-scroll h-full float-left w-64 fixed bottom-0 top-0">
+    <header class="bg-white md:bg-sky-600 md:ml-64 drop-shadow-sm md:drop-shadow-none h-20 px-8 flex items-center justify-between">
+        <!--barra de pesquisa-->
+        <div class="hidden md:flex bg-slate-50 h-11 w-56 rounded-md items-center text-slate-300 pt-1 drop-shadow-md">
+            <span class="material-symbols-outlined mx-3 font-extrabold">search</span><p class="font-light">Search here...</p>
+        </div>
+
+        <!--menu-->
+        <span class="material-symbols-outlined mx-3 font-black md:hidden text-slate-500">menu</span>
+
+        <!--logo-->
+        <p class="text-gray-600 text-sm uppercase font-semibold md:hidden">
+            <a href="#">Notus React</a>
+        </p>
+
+        <!--perfil-->
+        <div class="h-12 w-12 bg-red-500 rounded-full drop-shadow-md">
+            
+        </div>
+    </header>
+
+    <aside class="bg-white pb-10 overflow-y-scroll h-full float-left w-64 fixed bottom-0 top-0 hidden md:block">
         <nav class="p-6">
             <a href="#"><h1>Notus React</h1></a>
 
@@ -49,10 +69,72 @@
             </ul>
         </nav>
     </aside>
-    <div class="ml-64 p-5">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A ea explicabo incidunt illum enim. Distinctio ea, dolores dolorum beatae, neque quidem eveniet cum repellendus commodi explicabo nam magnam aliquam perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio similique explicabo maxime illum voluptate? Mollitia qui labore velit! Vero nulla voluptas modi sapiente perspiciatis ipsam magni deserunt fuga repellat soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum beatae quas voluptatem! Eaque deleniti aliquid ex dignissimos, officiis eveniet quo quos eos natus. Qui laboriosam reiciendis fugit voluptas saepe libero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt nesciunt quo eveniet in itaque ipsam ipsa neque alias officiis id! Quis atque eveniet veritatis nemo adipisci dolore, itaque temporibus dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolores reprehenderit, consequatur placeat cumque officia id expedita quos iste debitis impedit itaque harum minus ducimus eum at. Corporis, nostrum perspiciatis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. A ea explicabo incidunt illum enim. Distinctio ea, dolores dolorum beatae, neque quidem eveniet cum repellendus commodi explicabo nam magnam aliquam perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio similique explicabo maxime illum voluptate? Mollitia qui labore velit! Vero nulla voluptas modi sapiente perspiciatis ipsam magni deserunt fuga repellat soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum beatae quas voluptatem! Eaque deleniti aliquid ex dignissimos, officiis eveniet quo quos eos natus. Qui laboriosam reiciendis fugit voluptas saepe libero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt nesciunt quo eveniet in itaque ipsam ipsa neque alias officiis id! Quis atque eveniet veritatis nemo adipisci dolore, itaque temporibus dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolores reprehenderit, consequatur placeat cumque officia id expedita quos iste debitis impedit itaque harum minus ducimus eum at. Corporis, nostrum perspiciatis?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A ea explicabo incidunt illum enim. Distinctio ea, dolores dolorum beatae, neque quidem eveniet cum repellendus commodi explicabo nam magnam aliquam perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio similique explicabo maxime illum voluptate? Mollitia qui labore velit! Vero nulla voluptas modi sapiente perspiciatis ipsam magni deserunt fuga repellat soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum beatae quas voluptatem! Eaque deleniti aliquid ex dignissimos, officiis eveniet quo quos eos natus. Qui laboriosam reiciendis fugit voluptas saepe libero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt nesciunt quo eveniet in itaque ipsam ipsa neque alias officiis id! Quis atque eveniet veritatis nemo adipisci dolore, itaque temporibus dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolores reprehenderit, consequatur placeat cumque officia id expedita quos iste debitis impedit itaque harum minus ducimus eum at. Corporis, nostrum perspiciatis?
-        </p>
-    </div>
+    <main class="md:ml-64">
+        <div id="cards" class="bg-sky-600 p-12">
+            <!--card 1-->
+            <div class="card">
+                <!--dados-->
+                <div class="dados">
+                    <div>
+                        <h4>Traffic</h4>
+                        <p>350,897</p>
+                    </div>
+                    <p><span class="text-emerald-500"><span class="material-symbols-outlined">arrow_upward</span>3.48%</span> Since last month</p>
+                </div>
+                <!--icone-->
+                <div class="icone bg-red-500">
+                    <span class="material-symbols-outlined -translate-y-0.5">monitoring</span>
+                </div>
+            </div>
+
+            <!--card 2-->
+            <div class="card">
+                <!--dados-->
+                <div class="dados">
+                    <div>
+                        <h4>New Users</h4>
+                        <p>2,356</p>
+                    </div>
+                    <p><span class="text-red-500"><span class="material-symbols-outlined">arrow_upward</span>3.48%</span> Since last week</p>
+                </div>
+                <!--icone-->
+                <div class="icone bg-orange-500">
+                    <span class="material-symbols-outlined">pie_chart</span>
+                </div>
+            </div>
+
+            <!--card 3-->
+            <div class="card">
+                <!--dados-->
+                <div class="dados">
+                    <div>
+                        <h4 class="uppercase text-slate-400 font-semibold text-xs">Sales</h4>
+                        <p>924</p>
+                    </div>
+                    <p><span class="text-orange-500"><span class="material-symbols-outlined">arrow_upward</span>1.10%</span> Since yesterday</p>
+                </div>
+                <!--icone-->
+                <div class="icone bg-pink-500">
+                    <span class="material-symbols-outlined -translate-y-0.5">groups</span>
+                </div>
+            </div>
+
+            <!--card 4-->
+            <div class="card">
+                <!--dados-->
+                <div class="dados">
+                    <div>
+                        <h4 class="uppercase text-slate-400 font-semibold text-xs">Performance</h4>
+                        <p>49,65%</p>
+                    </div>
+                    <p><span class="text-emerald-500"><span class="material-symbols-outlined">arrow_upward</span>12%</span> Since last month</p>
+                </div>
+                <!--icone-->
+                <div class="icone bg-sky-500">
+                    <span class="material-symbols-outlined">percent</span>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

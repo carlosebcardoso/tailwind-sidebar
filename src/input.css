@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.material-symbols-outlined {
+    @apply select-none;
+}
+
 nav h1, nav h2, nav li {
     @apply uppercase text-xs font-semibold;
 }
@@ -23,9 +27,41 @@ nav li:hover {
 }
 
 ul#n-lowercase li{
-    @apply normal-case text-sm mb-4;
+    @apply normal-case text-sm mb-3;
 }
 
 nav span {
     @apply translate-y-1.5 scale-75 text-gray-400 opacity-75 mr-1;
+}
+
+div.card {
+    @apply bg-slate-50 rounded-md flex justify-between h-28 p-4 mb-6;
+}
+
+div.dados {
+    @apply flex flex-col justify-between;
+}
+
+div.dados > div > h4 {
+    @apply uppercase text-slate-400 font-semibold text-xs;
+}
+
+div.dados > div > p {
+    @apply font-bold text-slate-700 text-lg;
+}
+
+div.dados > p {
+    @apply text-sm text-slate-400;
+}
+
+div.dados span.material-symbols-outlined{
+    @apply font-black text-sm translate-y-0.5;
+}
+
+div.icone {
+    @apply h-12 w-12 rounded-full flex items-center justify-center;
+}
+
+div.icone span.material-symbols-outlined {
+    @apply text-slate-50 font-bold;
 }
