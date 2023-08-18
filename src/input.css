@@ -54,6 +54,10 @@ div.dados > p {
     @apply text-sm text-slate-400;
 }
 
+div.dados > p > span {
+    @apply mr-2;
+}
+
 div.dados span.material-symbols-outlined{
     @apply font-black text-sm translate-y-0.5;
 }
