@@ -7,20 +7,27 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
     <link rel="stylesheet" href="../dist/output.css">
 </head>
-<body class="bg-gray-200">
+<body class="bg-slate-200">
     <header class="bg-white md:bg-sky-600 md:ml-64 drop-shadow-sm md:drop-shadow-none h-20 px-8 flex items-center justify-between">
-        <!--barra de pesquisa-->
-        <div class="hidden md:flex bg-slate-50 h-11 w-56 rounded-md items-center text-slate-300 pt-1 drop-shadow-md">
-            <span class="material-symbols-outlined mx-3 font-extrabold">search</span><p class="font-light">Search here...</p>
+
+        <!--dashboard logo-->
+        <div class="hidden lg:block">
+            <a class="uppercase font-semibold text-slate-50 text-sm" href="#">Dashboard</a>
         </div>
+
+        <!--barra de pesquisa-->
+        <label for="isearch" class="hidden md:flex bg-slate-50 h-11 w-56 rounded-md items-center text-slate-300 pt-1 drop-shadow-md lg:ml-auto mr-4 overflow-hidden">
+            <span class="material-symbols-outlined mx-3 font-extrabold -translate-y-0.5">search</span>
+            <input type="search" placeholder="Search here..." name="search" id="isearch" class="font-light focus:text-slate-700 h-full w-full outline-none -translate-y-0.5">
+        </label>
 
         <!--menu-->
         <span class="material-symbols-outlined mx-3 font-black md:hidden text-slate-500">menu</span>
 
         <!--logo-->
-        <p class="text-gray-600 text-sm uppercase font-semibold md:hidden">
+        <div class="text-gray-600 text-sm uppercase font-semibold md:hidden">
             <a href="#">Notus React</a>
-        </p>
+        </div>
 
         <!--perfil-->
         <div class="h-12 w-12 bg-red-500 rounded-full drop-shadow-md">
@@ -28,7 +35,7 @@
         </div>
     </header>
 
-    <aside class="bg-white pb-10 overflow-y-scroll h-full float-left w-64 fixed bottom-0 top-0 hidden md:block">
+    <aside class="bg-white pb-10 overflow-y-scroll h-full float-left w-64 fixed bottom-0 top-0 hidden md:block shadow-xl">
         <nav class="p-6">
             <a href="#"><h1>Notus React</h1></a>
 
@@ -70,7 +77,8 @@
         </nav>
     </aside>
     <main class="md:ml-64">
-        <div id="cards" class="bg-sky-600 py-12 px-8">
+        <!--cards-->
+        <div class="bg-sky-600 py-12 pb-32 px-8 grid lg:grid-cols-2 xl:grid-cols-4 gap-6">
             <!--card 1-->
             <div class="card">
                 <!--dados-->
@@ -133,6 +141,26 @@
                 <div class="icone bg-sky-500">
                     <span class="material-symbols-outlined">percent</span>
                 </div>
+            </div>
+        </div>
+
+        <!--tables-->
+        <div id="tables" class="grid xl:grid-cols-2 xl:grid-cols-3 gap-8 -translate-y-16 xl:-translate-y-20 px-8">
+            <!--table 1-->
+            <div class="bg-slate-700 xl:col-span-2">
+
+            </div>
+            <!--table 2-->
+            <div class="bg-slate-100">
+
+            </div>
+            <!--table 3-->
+            <div class="bg-slate-900 xl:col-span-2">
+
+            </div>
+            <!--table 4-->
+            <div class="bg-slate-400">
+
             </div>
         </div>
     </main>

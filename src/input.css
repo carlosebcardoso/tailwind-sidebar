@@ -35,7 +35,7 @@ nav span {
 }
 
 div.card {
-    @apply bg-slate-50 rounded-md flex justify-between h-28 p-4 mb-6;
+    @apply bg-slate-50 rounded-md flex justify-between h-28 p-4 drop-shadow-md;
 }
 
 div.dados {
@@ -68,4 +68,8 @@ div.icone {
 
 div.icone span.material-symbols-outlined {
     @apply text-slate-50 font-bold;
+}
+
+div#tables > div {
+    @apply h-96 rounded;
 }
