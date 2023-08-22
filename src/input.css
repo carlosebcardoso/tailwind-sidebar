@@ -6,6 +6,10 @@
     @apply select-none;
 }
 
+div#popup > a {
+    @apply block;
+}
+
 nav h1, nav h2, nav li {
     @apply uppercase text-xs font-semibold;
 }
